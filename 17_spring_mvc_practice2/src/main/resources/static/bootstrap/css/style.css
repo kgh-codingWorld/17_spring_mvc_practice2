@@ -51,7 +51,6 @@ a {
       margin-right: 15px; } }
   .custom-navbar .custom-navbar-nav li a {
     font-weight: 500;
-    color: #000000 !important;
     opacity: .5;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -713,3 +712,107 @@ textarea {
     height: 50px;
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); }
+    
+/* My CSS */
+/* 영어용 */
+.libre-baskerville-bold {
+	font-family: "Libre Baskerville", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+/* 한글용 */
+.noto-serif-kr {
+  	font-family: "Noto Serif KR", serif;
+  	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+}
+
+.hero {
+	background: url("/bootstrap/images/main4.jpg") no-repeat fixed center center;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 1.0); /* 검정색, 투명도 50% */
+	height: 54rem;
+}
+
+.blog-background {
+	background: url("/bootstrap/images/main5.jpg") no-repeat fixed center center;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 1.0);
+	height: 20rem;
+	
+}
+.blog-background h1 {
+	font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.introduce-background {
+	background: url("/bootstrap/images/main1.jpg") no-repeat fixed center center;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 1.0);
+	height: 20rem;
+}
+.introduce-background h1 {
+	font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.login-background {
+	background: url("/bootstrap/images/main6.jpg") no-repeat fixed center center;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 1.0);
+}
+
+.cart-background {
+	background: url("/bootstrap/images/main2.jpg") no-repeat fixed center center;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 1.0);
+	height: 20rem;
+}
+.cart-background h1 {
+	font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.col-lg-5 {
+	animation: fadein 2s;    
+	-moz-animation: fadein 2s;    
+	-webkit-animation: fadein 2s;    
+	-o-animation: fadein 2s;
+}
+@keyframes fadein {
+    from {        
+    	opacity:0.1;    
+    }    
+    to {        
+    	opacity:1;    
+    }
+}
+@-moz-keyframes fadein {
+    from {        
+		opacity:0.1;    
+    }    
+    to {        
+		opacity:1;    
+    }
+}
+@-webkit-keyframes fadein {    
+	from {        
+		opacity:0.1;    
+	}    
+	to {        
+		opacity:1;    
+	}
+}
+@-o-keyframes fadein {    
+	from {        
+		opacity:0.1;    
+	}   
+	 to {        
+		 opacity: 1;   
+	}
+}
