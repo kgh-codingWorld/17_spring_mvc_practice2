@@ -38,4 +38,9 @@ public class LayoutController {
 		return "chapter01_thymeleaf/layout/bootstrap/cart";
 	}
 	
+	@GetMapping("/shoppingList")
+	public String shoppingList() {
+		return "chapter01_thymeleaf/layout/bootstrap/shoppingList";
+	}
+	
 }

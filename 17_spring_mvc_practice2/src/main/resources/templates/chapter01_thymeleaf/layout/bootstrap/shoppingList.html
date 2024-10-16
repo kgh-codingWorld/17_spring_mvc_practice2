@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{/chapter01_thymeleaf/layout/bootstrap/layout.html}"
+>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+h1 {
+	text-align: center;
+	color: #333;
+}
+
+table {
+	width: 80%;
+	margin: 20px auto;
+	border-collapse: collapse;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+	padding: 12px 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+table th {
+	background-color: #f4f4f4;
+	font-weight: bold;
+}
+
+table tr:hover {
+	background-color: #f1f1f1;
+}
+
+.status.completed {
+	color: green;
+	font-weight: bold;
+}
+
+.status.pending {
+	color: orange;
+	font-weight: bold;
+}
+
+.status.failed {
+	color: red;
+	font-weight: bold;
+}
+
+.container {
+	text-align: center;
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: #007BFF;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+	<div layout:fragment="content">
+		<!-- Start Hero Section -->
+		<div class="cart-background">
+			<div
+				class="container"
+				style="transform: translate(10px, 122px);"
+			>
+				<div class="row justify-content-between">
+					<div class="col-lg-5">
+						<div class="intro-excerpt">
+							<h1 class="libre-baskerville-bold">Payments</h1>
+						</div>
+					</div>
+					<div class="col-lg-7"></div>
+				</div>
+			</div>
+		</div>
+		<!-- End Hero Section -->
+		
+		<div class="shoppingList-table">
+			<table>
+				<thead>
+					<tr>
+						<th>Payment ID</th>
+						<th>결제일</th>
+						<th>수량</th>
+						<th>Payment Method</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Example Rows (To be replaced with dynamic data) -->
+					<tr>
+						<td>1001</td>
+						<td>2024-09-08</td>
+						<td>$120.50</td>
+						<td>Credit Card</td>
+						<td><span class="status completed">Completed</span></td>
+					</tr>
+					<tr>
+						<td>1002</td>
+						<td>2024-09-01</td>
+						<td>$45.00</td>
+						<td>PayPal</td>
+						<td><span class="status pending">Pending</span></td>
+					</tr>
+					<tr>
+						<td>1003</td>
+						<td>2024-08-28</td>
+						<td>$78.20</td>
+						<td>Mobile Payment</td>
+						<td><span class="status failed">Failed</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<a
+				href="#"
+				class="button"
+			>Back to Dashboard</a>
+		</div>
+	</div>
+</body>
+</html>
